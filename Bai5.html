@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Bai5</title>
+    <style>
+        body{
+            margin-left: 500px;
+            margin-top: 180px;
+        }
+        .header{
+            width: 500px;
+            height: 300px;
+            border: 2px dotted rgb(206, 135, 188);
+            text-align: center;
+            background-color:rgb(240, 216, 220);
+            border-radius: 10px ;
+        }
+        .box{
+            margin-top: 60px;
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+        .enter input{
+            margin-bottom: 15px;
+            width: 230px;
+            height: 30px;
+            border-radius: 10px;
+        }
+        .document input{
+            width: 100px;
+            height: 40px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function validateForm(){
+            let number=document.getElementById("number").value;
+            if(isNaN(number)||number%2||number==""){
+                alert("đây là số lẻ");
+                return false;
+        }
+            else {
+                alert("số bạn vừa nhập là số chẵn");
+            }
+            return true;
+            
+        }
+    </script>
+    <div class="header">
+    <form onsubmit="return validateForm()">
+        <div class="box">
+        <label for="username">Hãy nhập số:</label>
+    </div>
+        <div class="enter">
+        <input type="text" name="number" id="number"><br/></div>
+        <div class="document">
+        <input type="submit" value="gửi">
+    </div>
+    </form>
+    </div>
+</body>
+</html>
