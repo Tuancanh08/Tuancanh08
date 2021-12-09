@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bai5</title>
+	<style>
+		body{
+			margin-top: 200px;
+			margin-left: 480px;
+		}
+		.content{
+			width: 500px;
+			height: 300px;
+			border: 1px solid black;
+			text-align: center;
+            background-color:peachpuff;
+		}
+		.full{
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
+		.full label{
+			font-size: 25px;
+		}
+		.full input{
+			width: 250px;
+			height: 30px;
+			border-radius: 5px;
+		}
+		.stack{
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
+		.stack label{
+			font-size: 25px;
+		}
+		.stack input{
+			width: 250px;
+			height: 30px;
+			border-radius: 5px;
+		}
+		.end{
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
+		.end label{
+			font-size: 25px;
+		}
+		.end input{
+			width: 250px;
+			height: 30px;
+			border-radius: 5px;
+		}
+		.over input{
+			width: 130px;
+			height: 30px;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		function checkForm(){
+			var number1=document.getElementById("number1").value;
+			var number2=document.getElementById("number2").value;
+			if(isNaN(number1)||isNaN(number2)){
+				alert("hãy nhập lại số của bạn");
+				return false;
+			}else{
+				var result=parseInt(number1)+parseInt(number2);
+				document.getElementById("number3").value =result;
+			}
+		}
+	</script>
+	<div class="content">
+	    <form id="myid">
+		    <div class="full">
+		        <label for="">Số thứ nhất:</label>
+		        <input type="text" id="number1"><br/>
+		    </div>
+		    <div class="stack">
+		        <label for="">Số thứ hai:</label>
+		        <input type="text" id="number2"><br/>
+		    </div>
+		    <div class="over">
+		        <input type="button" value="kết quả" onclick="checkForm()"><br/>
+		    </div>
+		        <div class="end">
+		        <label for="">kết quả:</label>
+		        <input type="text" id="number3">
+		    </div>
+	    </form>
+    </div>
+</body>
+</html>
