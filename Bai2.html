@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+    <style>
+        #container {
+            width: 100%;
+            max-width: 500px;
+            margin: 30px auto;
+            background-color: #cff0eb;
+            padding: 20px;
+            border: 2px solid #6eb0b3;
+            border-radius: 10px;
+        }
+        .content{
+            margin-bottom: 10px;
+        }
+        .content input {   
+            width: 48%;
+            border: 1px solid #cccccc;
+            font-size: 15px;
+            height: 30px;
+        }
+        .content .content1 input{
+           width: 100%;
+           margin: 1.0px auto;
+        }
+        .dateandsex {
+            padding: 7.5px 15px;
+            width: 95%;
+            border: 1px solid #cccccc;
+            font-size: 15px;
+            display: inline-block;
+            height: 30px;
+            color: #4c656d;
+        }
+        .content3 {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .content3 input{
+            padding: 5px 15px;
+            border-radius: 5px;
+            background-color: #3e6b6b;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form action="">
+            <h1>Đăng ký</h1>
+            <h4>Nhanh chóng và dễ dàng</h4>
+            <div class="content">
+                <input type="text" placeholder="Họ" id="firstname">
+                <input type="text" placeholder="Tên" id="name"></br>
+            </div>
+            
+            <div class="content">
+                <div class="content1">
+                <input type="text" placeholder="Số di động hoặc email" id="number">
+           
+                <input type="text" placeholder="Mật khẩu mới" id="password">
+                </div>
+            </div>
+
+            <div class="content">
+               <div class="dateandsex">
+                    <label for="">Ngày sinh</label>
+                   <input type="date" id="day">
+               </div>
+               <div class="dateandsex">
+                    <label for="">Giới tính</label>
+                    <select id="gioitinh">
+                        <option value="nam">Nam</option>
+                        <option value="nu">Nữ</option>
+                        <option value="tuychinh">Tùy chỉnh</option>
+                    </select>
+               </div>
+            </div>
+            <p>Bằng cách nhấp vào Đăng ký, bạn đồng ý với Điều khoản, Chính sách dữ liệu và Chính sách cookie của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và hủy nhận bất cứ lúc nào.</p>
+            <div class="content3">
+            <input type="submit"value="Đăng ký"/>
+        </div>
+        </form>
+    </div>    
+</body>
+</html>
