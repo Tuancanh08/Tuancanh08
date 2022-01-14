@@ -11,7 +11,7 @@ def thuan_nghich(n):
         print(m, "khong la so thuan nghich")
 
 
-name = input("lotuancanh:")
+name = lotuancanh("lotuancanh:")
 name_split = name.split()
 n = []
 for i in name_split:
